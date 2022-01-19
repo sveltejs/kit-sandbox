@@ -1,0 +1,50 @@
+lockfileVersion: 5.3
+
+overrides:
+  '@sveltejs/kit': ../kit/packages/kit
+  '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
+
+specifiers:
+  '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
+  '@sveltejs/kit': ../kit/packages/kit
+  devalue: ^2.0.1
+  prettier: ^2.4.1
+  prettier-plugin-svelte: ^2.4.0
+  svelte: ^3.44.0
+
+dependencies:
+  devalue: 2.0.1
+
+devDependencies:
+  '@sveltejs/adapter-auto': link:../kit/packages/adapter-auto
+  '@sveltejs/kit': link:../kit/packages/kit
+  prettier: 2.5.1
+  prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.2
+  svelte: 3.46.2
+
+packages:
+
+  /devalue/2.0.1:
+    resolution: {integrity: sha512-I2TiqT5iWBEyB8GRfTDP0hiLZ0YeDJZ+upDxjBfOC2lebO5LezQMv7QvIUTzdb64jQyAKLf1AHADtGN+jw6v8Q==}
+    dev: false
+
+  /prettier-plugin-svelte/2.6.0_prettier@2.5.1+svelte@3.46.2:
+    resolution: {integrity: sha512-NPSRf6Y5rufRlBleok/pqg4+1FyGsL0zYhkYP6hnueeL1J/uCm3OfOZPsLX4zqD9VAdcXfyEL2PYqGv8ZoOSfA==}
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0
+    dependencies:
+      prettier: 2.5.1
+      svelte: 3.46.2
+    dev: true
+
+  /prettier/2.5.1:
+    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /svelte/3.46.2:
+    resolution: {integrity: sha512-RXSAtYNefe01Sb1lXtZ2I+gzn3t/h/59hoaRNeRrm8IkMIu6BSiAkbpi41xb+C44x54YKnbk9+dtfs3pM4hECA==}
+    engines: {node: '>= 8'}
+    dev: true
