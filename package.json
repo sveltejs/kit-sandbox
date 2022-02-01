@@ -20,10 +20,13 @@
 		"@sveltejs/kit": "next",
 		"prettier": "^2.4.1",
 		"prettier-plugin-svelte": "^2.4.0",
-		"svelte": "^3.44.0"
+		"svelte": "^3.46.0"
 	},
 	"type": "module",
 	"dependencies": {
-		"devalue": "^2.0.1"
+		"devalue": "^2.0.1",
+		"@fontsource/fira-mono": "^4.5.0",
+		"@lukeed/uuid": "^2.0.0",
+		"cookie": "^0.4.1"
 	}
 }
