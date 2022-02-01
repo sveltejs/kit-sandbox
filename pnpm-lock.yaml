@@ -5,14 +5,20 @@ overrides:
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
 
 specifiers:
+  '@fontsource/fira-mono': ^4.5.0
+  '@lukeed/uuid': ^2.0.0
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
   '@sveltejs/kit': ../kit/packages/kit
+  cookie: ^0.4.1
   devalue: ^2.0.1
   prettier: ^2.4.1
   prettier-plugin-svelte: ^2.4.0
-  svelte: ^3.44.0
+  svelte: ^3.46.0
 
 dependencies:
+  '@fontsource/fira-mono': 4.5.1
+  '@lukeed/uuid': 2.0.0
+  cookie: 0.4.1
   devalue: 2.0.1
 
 devDependencies:
@@ -23,6 +29,27 @@ devDependencies:
   svelte: 3.46.2
 
 packages:
+
+  /@fontsource/fira-mono/4.5.1:
+    resolution: {integrity: sha512-4IuUqpI0Rk0Fd6XVcS8uTpwB0cIIvdyzcCP+dTF4xwqESQN6e9BbhlLY7zcko6ACJRfa/wdbgwKoZmqEKCbloQ==}
+    dev: false
+
+  /@lukeed/csprng/1.0.1:
+    resolution: {integrity: sha512-uSvJdwQU5nK+Vdf6zxcWAY2A8r7uqe+gePwLWzJ+fsQehq18pc0I2hJKwypZ2aLM90+Er9u1xn4iLJPZ+xlL4g==}
+    engines: {node: '>=8'}
+    dev: false
+
+  /@lukeed/uuid/2.0.0:
+    resolution: {integrity: sha512-dUz8OmYvlY5A9wXaroHIMSPASpSYRLCqbPvxGSyHguhtTQIy24lC+EGxQlwv71AhRCO55WOtgwhzQLpw27JaJQ==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@lukeed/csprng': 1.0.1
+    dev: false
+
+  /cookie/0.4.1:
+    resolution: {integrity: sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==}
+    engines: {node: '>= 0.6'}
+    dev: false
 
   /devalue/2.0.1:
     resolution: {integrity: sha512-I2TiqT5iWBEyB8GRfTDP0hiLZ0YeDJZ+upDxjBfOC2lebO5LezQMv7QvIUTzdb64jQyAKLf1AHADtGN+jw6v8Q==}
