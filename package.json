@@ -12,10 +12,14 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-node": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.29",
 		"@sveltejs/kit": "next",
+		"devalue": "^2.0.1",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
-		"svelte": "^3.46.0"
+		"svelte": "^3.46.0",
+		"typescript": "^4.6.2"
 	},
 	"type": "module",
 	"dependencies": {
@@ -26,7 +30,9 @@
 	"pnpm": {
 		"overrides": {
 			"@sveltejs/kit": "../kit/packages/kit",
-			"@sveltejs/adapter-auto": "../kit/packages/adapter-auto"
+			"@sveltejs/adapter-auto": "../kit/packages/adapter-auto",
+			"@sveltejs/adapter-node": "../kit/packages/adapter-node",
+			"@sveltejs/adapter-static": "../kit/packages/adapter-static"
 		}
 	}
 }
