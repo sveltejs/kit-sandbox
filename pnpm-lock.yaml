@@ -5,13 +5,15 @@ overrides:
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
   '@sveltejs/adapter-static': ../kit/packages/adapter-static
+  '@sveltejs/adapter-vercel': ../kit/packages/adapter-vercel
 
 specifiers:
   '@fontsource/fira-mono': ^4.5.0
   '@lukeed/uuid': ^2.0.0
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
-  '@sveltejs/adapter-static': ^1.0.0-next.29
+  '@sveltejs/adapter-static': ../kit/packages/adapter-static
+  '@sveltejs/adapter-vercel': ../kit/packages/adapter-vercel
   '@sveltejs/kit': ../kit/packages/kit
   cookie: ^0.4.1
   devalue: ^2.0.1
@@ -28,7 +30,8 @@ dependencies:
 devDependencies:
   '@sveltejs/adapter-auto': link:../kit/packages/adapter-auto
   '@sveltejs/adapter-node': link:../kit/packages/adapter-node
-  '@sveltejs/adapter-static': 1.0.0-next.29
+  '@sveltejs/adapter-static': link:../kit/packages/adapter-static
+  '@sveltejs/adapter-vercel': link:../kit/packages/adapter-vercel
   '@sveltejs/kit': link:../kit/packages/kit
   devalue: 2.0.1
   prettier: 2.5.1
@@ -54,12 +57,6 @@ packages:
       '@lukeed/csprng': 1.0.1
     dev: false
 
-  /@sveltejs/adapter-static/1.0.0-next.29:
-    resolution: {integrity: sha512-0hjGnfT3BRyoHnzJ2w0/xL+xICRpKneDTm45ZzggiRrc0r71WJfF6toGeg8N4QUQnj8EJ3Itm453gsS1kt7VUQ==}
-    dependencies:
-      tiny-glob: 0.2.9
-    dev: true
-
   /cookie/0.4.2:
     resolution: {integrity: sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==}
     engines: {node: '>= 0.6'}
@@ -67,14 +64,6 @@ packages:
 
   /devalue/2.0.1:
     resolution: {integrity: sha512-I2TiqT5iWBEyB8GRfTDP0hiLZ0YeDJZ+upDxjBfOC2lebO5LezQMv7QvIUTzdb64jQyAKLf1AHADtGN+jw6v8Q==}
-    dev: true
-
-  /globalyzer/0.1.0:
-    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
-    dev: true
-
-  /globrex/0.1.2:
-    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
 
   /prettier-plugin-svelte/2.6.0_prettier@2.5.1+svelte@3.46.4:
@@ -96,13 +85,6 @@ packages:
   /svelte/3.46.4:
     resolution: {integrity: sha512-qKJzw6DpA33CIa+C/rGp4AUdSfii0DOTCzj/2YpSKKayw5WGSS624Et9L1nU1k2OVRS9vaENQXp2CVZNU+xvIg==}
     engines: {node: '>= 8'}
-    dev: true
-
-  /tiny-glob/0.2.9:
-    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
-    dependencies:
-      globalyzer: 0.1.0
-      globrex: 0.1.2
     dev: true
 
   /typescript/4.6.2:

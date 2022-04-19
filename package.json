@@ -14,6 +14,7 @@
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "^1.0.0-next.29",
+		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
 		"devalue": "^2.0.1",
 		"prettier": "^2.5.1",
@@ -32,7 +33,8 @@
 			"@sveltejs/kit": "../kit/packages/kit",
 			"@sveltejs/adapter-auto": "../kit/packages/adapter-auto",
 			"@sveltejs/adapter-node": "../kit/packages/adapter-node",
-			"@sveltejs/adapter-static": "../kit/packages/adapter-static"
+			"@sveltejs/adapter-static": "../kit/packages/adapter-static",
+			"@sveltejs/adapter-vercel": "../kit/packages/adapter-vercel"
 		}
 	}
 }
