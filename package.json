@@ -2,11 +2,11 @@
 	"name": "kit-sandbox",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "node ../kit/packages/kit/src/cli.js dev",
-		"build": "node ../kit/packages/kit/src/cli.js build",
-		"package": "node ../kit/packages/kit/src/cli.js package",
-		"preview": "node ../kit/packages/kit/src/cli.js preview",
-		"prepare": "node ../kit/packages/kit/src/cli.js sync",
+		"dev": "node cli.js dev",
+		"build": "node cli.js build",
+		"package": "node cli.js package",
+		"preview": "node cli.js preview",
+		"prepare": "node cli.js sync",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
