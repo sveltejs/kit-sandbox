@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 overrides:
   '@sveltejs/kit': ../kit/packages/kit
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
+  '@sveltejs/adapter-netlify': ../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
   '@sveltejs/adapter-static': ../kit/packages/adapter-static
   '@sveltejs/adapter-vercel': ../kit/packages/adapter-vercel
@@ -11,6 +12,7 @@ specifiers:
   '@fontsource/fira-mono': ^4.5.0
   '@lukeed/uuid': ^2.0.0
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
+  '@sveltejs/adapter-netlify': ../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
   '@sveltejs/adapter-static': ../kit/packages/adapter-static
   '@sveltejs/adapter-vercel': ../kit/packages/adapter-vercel
@@ -29,6 +31,7 @@ dependencies:
 
 devDependencies:
   '@sveltejs/adapter-auto': link:../kit/packages/adapter-auto
+  '@sveltejs/adapter-netlify': link:../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': link:../kit/packages/adapter-node
   '@sveltejs/adapter-static': link:../kit/packages/adapter-static
   '@sveltejs/adapter-vercel': link:../kit/packages/adapter-vercel
