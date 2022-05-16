@@ -1,8 +1,9 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 overrides:
   '@sveltejs/kit': ../kit/packages/kit
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
+  '@sveltejs/adapter-cloudflare': ../kit/packages/adapter-cloudflare
   '@sveltejs/adapter-netlify': ../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
   '@sveltejs/adapter-static': ../kit/packages/adapter-static
@@ -12,6 +13,7 @@ specifiers:
   '@fontsource/fira-mono': ^4.5.0
   '@lukeed/uuid': ^2.0.0
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
+  '@sveltejs/adapter-cloudflare': ../kit/packages/adapter-cloudflare
   '@sveltejs/adapter-netlify': ../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
   '@sveltejs/adapter-static': ../kit/packages/adapter-static
@@ -31,6 +33,7 @@ dependencies:
 
 devDependencies:
   '@sveltejs/adapter-auto': link:../kit/packages/adapter-auto
+  '@sveltejs/adapter-cloudflare': link:../kit/packages/adapter-cloudflare
   '@sveltejs/adapter-netlify': link:../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': link:../kit/packages/adapter-node
   '@sveltejs/adapter-static': link:../kit/packages/adapter-static
@@ -38,7 +41,7 @@ devDependencies:
   '@sveltejs/kit': link:../kit/packages/kit
   devalue: 2.0.1
   prettier: 2.5.1
-  prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
+  prettier-plugin-svelte: 2.6.0_a6mk22ceh463eaorpsa4xgvlmq
   svelte: 3.46.4
   typescript: 4.6.2
 
@@ -69,7 +72,7 @@ packages:
     resolution: {integrity: sha512-I2TiqT5iWBEyB8GRfTDP0hiLZ0YeDJZ+upDxjBfOC2lebO5LezQMv7QvIUTzdb64jQyAKLf1AHADtGN+jw6v8Q==}
     dev: true
 
-  /prettier-plugin-svelte/2.6.0_prettier@2.5.1+svelte@3.46.4:
+  /prettier-plugin-svelte/2.6.0_a6mk22ceh463eaorpsa4xgvlmq:
     resolution: {integrity: sha512-NPSRf6Y5rufRlBleok/pqg4+1FyGsL0zYhkYP6hnueeL1J/uCm3OfOZPsLX4zqD9VAdcXfyEL2PYqGv8ZoOSfA==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
