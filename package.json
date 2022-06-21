@@ -13,6 +13,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-cloudflare": "next",
+		"@sveltejs/adapter-cloudflare-workers": "next",
 		"@sveltejs/adapter-netlify": "next",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
@@ -35,6 +36,7 @@
 			"@sveltejs/kit": "../kit/packages/kit",
 			"@sveltejs/adapter-auto": "../kit/packages/adapter-auto",
 			"@sveltejs/adapter-cloudflare": "../kit/packages/adapter-cloudflare",
+			"@sveltejs/adapter-cloudflare-workers": "../kit/packages/adapter-cloudflare-workers",
 			"@sveltejs/adapter-netlify": "../kit/packages/adapter-netlify",
 			"@sveltejs/adapter-node": "../kit/packages/adapter-node",
 			"@sveltejs/adapter-static": "../kit/packages/adapter-static",

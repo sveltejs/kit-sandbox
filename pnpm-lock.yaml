@@ -4,6 +4,7 @@ overrides:
   '@sveltejs/kit': ../kit/packages/kit
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
   '@sveltejs/adapter-cloudflare': ../kit/packages/adapter-cloudflare
+  '@sveltejs/adapter-cloudflare-workers': ../kit/packages/adapter-cloudflare-workers
   '@sveltejs/adapter-netlify': ../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
   '@sveltejs/adapter-static': ../kit/packages/adapter-static
@@ -14,6 +15,7 @@ specifiers:
   '@lukeed/uuid': ^2.0.0
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
   '@sveltejs/adapter-cloudflare': ../kit/packages/adapter-cloudflare
+  '@sveltejs/adapter-cloudflare-workers': ../kit/packages/adapter-cloudflare-workers
   '@sveltejs/adapter-netlify': ../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': ../kit/packages/adapter-node
   '@sveltejs/adapter-static': ../kit/packages/adapter-static
@@ -34,6 +36,7 @@ dependencies:
 devDependencies:
   '@sveltejs/adapter-auto': link:../kit/packages/adapter-auto
   '@sveltejs/adapter-cloudflare': link:../kit/packages/adapter-cloudflare
+  '@sveltejs/adapter-cloudflare-workers': link:../kit/packages/adapter-cloudflare-workers
   '@sveltejs/adapter-netlify': link:../kit/packages/adapter-netlify
   '@sveltejs/adapter-node': link:../kit/packages/adapter-node
   '@sveltejs/adapter-static': link:../kit/packages/adapter-static
