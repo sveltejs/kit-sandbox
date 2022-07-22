@@ -12,7 +12,6 @@ overrides:
 
 specifiers:
   '@fontsource/fira-mono': ^4.5.0
-  '@lukeed/uuid': ^2.0.0
   '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
   '@sveltejs/adapter-cloudflare': ../kit/packages/adapter-cloudflare
   '@sveltejs/adapter-cloudflare-workers': ../kit/packages/adapter-cloudflare-workers
@@ -31,7 +30,6 @@ specifiers:
 
 dependencies:
   '@fontsource/fira-mono': 4.5.3
-  '@lukeed/uuid': 2.0.0
   cookie: 0.4.2
 
 devDependencies:
@@ -54,18 +52,6 @@ packages:
 
   /@fontsource/fira-mono/4.5.3:
     resolution: {integrity: sha512-uMeCuPhpLagkOBUkbuWgzRhSWoz7SxtgVJeo9nxuvwVZLahmKQJjkZnNj9OrLWMHbDWZMPI0ApolIJASEFP4eQ==}
-    dev: false
-
-  /@lukeed/csprng/1.0.1:
-    resolution: {integrity: sha512-uSvJdwQU5nK+Vdf6zxcWAY2A8r7uqe+gePwLWzJ+fsQehq18pc0I2hJKwypZ2aLM90+Er9u1xn4iLJPZ+xlL4g==}
-    engines: {node: '>=8'}
-    dev: false
-
-  /@lukeed/uuid/2.0.0:
-    resolution: {integrity: sha512-dUz8OmYvlY5A9wXaroHIMSPASpSYRLCqbPvxGSyHguhtTQIy24lC+EGxQlwv71AhRCO55WOtgwhzQLpw27JaJQ==}
-    engines: {node: '>=8'}
-    dependencies:
-      '@lukeed/csprng': 1.0.1
     dev: false
 
   /cookie/0.4.2:
