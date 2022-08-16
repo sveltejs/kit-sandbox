@@ -1,7 +1,8 @@
+import { error } from '@sveltejs/kit';
 import { api } from './_api';
 
-/** @type {import('./__types').RequestHandler} */
-export const GET = async ({ locals }) => {
+/** @type {import('./$types').PageServerLoad} */
+export const load = async ({ locals }) => {
 	// locals.userid comes from src/hooks.js
 	const response = await api('GET', `todos/${locals.userid}`);
 
@@ -9,34 +10,26 @@ export const GET = async ({ locals }) => {
 		// user hasn't created a todo list.
 		// start with an empty array
 		return {
-			body: {
-				todos: []
-			}
+			todos: []
 		};
 	}
 
 	if (response.status === 200) {
 		return {
-			body: {
-				todos: await response.json()
-			}
+			todos: await response.json()
 		};
 	}
 
-	return {
-		status: response.status
-	};
+	throw error(response.status);
 };
 
-/** @type {import('./__types').RequestHandler} */
+/** @type {import('./$types').Action} */
 export const POST = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('POST', `todos/${locals.userid}`, {
 		text: form.get('text')
 	});
-
-	return {};
 };
 
 // If the user has JavaScript disabled, the URL will change to
@@ -48,7 +41,7 @@ const redirect = {
 	}
 };
 
-/** @type {import('./__types').RequestHandler} */
+/** @type {import('./$types').Action} */
 export const PATCH = async ({ request, locals }) => {
 	const form = await request.formData();
 
@@ -56,15 +49,11 @@ export const PATCH = async ({ request, locals }) => {
 		text: form.has('text') ? form.get('text') : undefined,
 		done: form.has('done') ? !!form.get('done') : undefined
 	});
-
-	return redirect;
 };
 
-/** @type {import('./__types').RequestHandler} */
+/** @type {import('./$types').Action} */
 export const DELETE = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('DELETE', `todos/${locals.userid}/${form.get('uid')}`);
-
-	return redirect;
 };
