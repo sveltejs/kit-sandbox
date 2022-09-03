@@ -6,7 +6,6 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"package": "node cli.js package",
-		"prepare": "node cli.js sync",
 		"check": "tsc -p jsconfig.json && svelte-check --tsconfig ./tsconfig.json",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
