@@ -1,5 +1,15 @@
 import { error } from '@sveltejs/kit';
-import { api } from './_api';
+import { api } from './api';
+
+/**
+ * @typedef {{
+ *   uid: string;
+ *   created_at: Date;
+ *   text: string;
+ *   done: boolean;
+ *   pending_delete: boolean;
+ * }} Todo
+ */
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async ({ locals }) => {
@@ -10,12 +20,14 @@ export const load = async ({ locals }) => {
 		// user hasn't created a todo list.
 		// start with an empty array
 		return {
+			/** @type {Todo[]} */
 			todos: []
 		};
 	}
 
 	if (response.status === 200) {
 		return {
+			/** @type {Todo[]} */
 			todos: await response.json()
 		};
 	}
@@ -23,37 +35,32 @@ export const load = async ({ locals }) => {
 	throw error(response.status);
 };
 
-/** @type {import('./$types').Action} */
-export const POST = async ({ request, locals }) => {
-	const form = await request.formData();
+/** @type {import('./$types').Actions} */
+export const actions = {
+	add: async ({ request, locals }) => {
+		const form = await request.formData();
 
-	await api('POST', `todos/${locals.userid}`, {
-		text: form.get('text')
-	});
-};
+		await api('POST', `todos/${locals.userid}`, {
+			text: form.get('text')
+		});
+	},
+	edit: async ({ request, locals }) => {
+		const form = await request.formData();
 
-// If the user has JavaScript disabled, the URL will change to
-// include the method override unless we redirect back to /todos
-const redirect = {
-	status: 303,
-	headers: {
-		location: '/todos'
+		await api('PATCH', `todos/${locals.userid}/${form.get('uid')}`, {
+			text: form.get('text')
+		});
+	},
+	toggle: async ({ request, locals }) => {
+		const form = await request.formData();
+
+		await api('PATCH', `todos/${locals.userid}/${form.get('uid')}`, {
+			done: !!form.get('done')
+		});
+	},
+	delete: async ({ request, locals }) => {
+		const form = await request.formData();
+
+		await api('DELETE', `todos/${locals.userid}/${form.get('uid')}`);
 	}
-};
-
-/** @type {import('./$types').Action} */
-export const PATCH = async ({ request, locals }) => {
-	const form = await request.formData();
-
-	await api('PATCH', `todos/${locals.userid}/${form.get('uid')}`, {
-		text: form.has('text') ? form.get('text') : undefined,
-		done: form.has('done') ? !!form.get('done') : undefined
-	});
-};
-
-/** @type {import('./$types').Action} */
-export const DELETE = async ({ request, locals }) => {
-	const form = await request.formData();
-
-	await api('DELETE', `todos/${locals.userid}/${form.get('uid')}`);
 };
