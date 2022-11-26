@@ -21,16 +21,16 @@
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
-		"prettier": "^2.5.1",
-		"prettier-plugin-svelte": "^2.5.0",
-		"svelte": "^3.52.0",
-		"svelte-check": "^2.7.1",
-		"typescript": "^4.6.2",
-		"vite": "^3.1.0-beta.1"
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.53.1",
+		"svelte-check": "^2.9.2",
+		"typescript": "^4.9.3",
+		"vite": "^3.2.4"
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0"
+		"@fontsource/fira-mono": "^4.5.10"
 	},
 	"pnpm": {
 		"overrides": {
