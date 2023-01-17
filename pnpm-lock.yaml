@@ -13,14 +13,14 @@ overrides:
 specifiers:
   '@fontsource/fira-mono': ^4.5.10
   '@neoconfetti/svelte': ^1.0.0
-  '@sveltejs/adapter-auto': link:../kit/packages/adapter-auto
-  '@sveltejs/adapter-cloudflare': link:../kit/packages/adapter-cloudflare
-  '@sveltejs/adapter-cloudflare-workers': link:../kit/packages/adapter-cloudflare-workers
-  '@sveltejs/adapter-netlify': link:../kit/packages/adapter-netlify
-  '@sveltejs/adapter-node': link:../kit/packages/adapter-node
-  '@sveltejs/adapter-static': link:../kit/packages/adapter-static
-  '@sveltejs/adapter-vercel': link:../kit/packages/adapter-vercel
-  '@sveltejs/kit': link:../kit/packages/kit
+  '@sveltejs/adapter-auto': ../kit/packages/adapter-auto
+  '@sveltejs/adapter-cloudflare': ../kit/packages/adapter-cloudflare
+  '@sveltejs/adapter-cloudflare-workers': ../kit/packages/adapter-cloudflare-workers
+  '@sveltejs/adapter-netlify': ../kit/packages/adapter-netlify
+  '@sveltejs/adapter-node': ../kit/packages/adapter-node
+  '@sveltejs/adapter-static': ../kit/packages/adapter-static
+  '@sveltejs/adapter-vercel': ../kit/packages/adapter-vercel
+  '@sveltejs/kit': ../kit/packages/kit
   prettier: ^2.8.2
   prettier-plugin-svelte: ^2.9.0
   svelte: ^3.55.1
