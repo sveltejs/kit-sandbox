@@ -9,7 +9,7 @@ const config = {
 
 	server: {
 		fs: {
-			allow: [path.resolve('../kit/packages/kit/src')]
+			allow: [path.resolve('../kit')]
 		}
 	}
 };
