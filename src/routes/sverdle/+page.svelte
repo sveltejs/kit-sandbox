@@ -2,10 +2,8 @@
 	import { confetti } from '@neoconfetti/svelte';
 	import { enhance } from '$app/forms';
 
-	/** @type {import('./$types').PageData} */
 	export let data;
 
-	/** @type {import('./$types').ActionData} */
 	export let form;
 
 	/** Whether or not the user has won */
