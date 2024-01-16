@@ -31,17 +31,5 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.10"
-	},
-	"pnpm": {
-		"overrides": {
-			"@sveltejs/kit": "../kit/packages/kit",
-			"@sveltejs/adapter-auto": "../kit/packages/adapter-auto",
-			"@sveltejs/adapter-cloudflare": "../kit/packages/adapter-cloudflare",
-			"@sveltejs/adapter-cloudflare-workers": "../kit/packages/adapter-cloudflare-workers",
-			"@sveltejs/adapter-netlify": "../kit/packages/adapter-netlify",
-			"@sveltejs/adapter-node": "../kit/packages/adapter-node",
-			"@sveltejs/adapter-static": "../kit/packages/adapter-static",
-			"@sveltejs/adapter-vercel": "../kit/packages/adapter-vercel"
-		}
 	}
 }
