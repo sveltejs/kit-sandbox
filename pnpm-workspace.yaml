@@ -1,0 +1,2 @@
+overrides:
+  '@sveltejs/kit': link:../kit/packages/kit
